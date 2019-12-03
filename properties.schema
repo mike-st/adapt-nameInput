@@ -1,0 +1,143 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_nameInput": {
+              "type": "object",
+              "required": false,
+              "legend": "Enable Name Input in Course",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": true,
+                  "title": "Enable the Name Input Dialogue Modal to Launch",
+                  "inputType": "Checkbox",
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_nameInput": {
+              "type": "object",
+              "required": false,
+              "legend": "Enable Name Input in Course",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable the Name Input Dialogue Modal to Launch",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_delay": {
+                  "type": "number",
+                  "default": 46,
+                  "title": "Delay in Centiseconds for launch of prompt. (ex. 46 = 4.6 seconds)",
+                  "inputType": "Number",
+                  "validators": [
+                    "required"
+                  ]
+                },
+                "_buttons": {
+                  "type":"object",
+                  "required":true,
+                  "title": "Prompt Buttons",
+                  "properties":{
+                    "yes": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Continue",
+                      "title": "Accept Button",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "no": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Cancel",
+                      "title": "Decline Button",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    }
+                  }
+                },
+                "_prompt": {
+                  "type":"object",
+                  "required": true,
+                  "title": "Initial Prompt",
+                  "properties":{
+                    "title": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Please enter your name",
+                      "title": "Title in Name Input Prompt",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "body": {
+                      "type": "string",
+                      "required": false,
+                      "default": "We will use your name to personalize this course for you. Don't worry though, we won't store your details and they won't be shared with any third party.",
+                      "title": "Prompt Body Text",
+                      "inputType": "TextArea",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "placeholder": {
+                      "type": "string",
+                      "required": false,
+                      "default": "Your Name",
+                      "title": "Enter the placeholder description",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    }
+                  }
+                },
+                "_callUponName": {
+                  "type": "string",
+                  "required": false,
+                  "default": "<span class='inputs-name-here' style='background-color:#transparent'>&nbsp;</span>",
+                  "title": " Copy and paste the following span tag into the source code. Adding this span tag automatically inputs the custom name anywhere within your course you have place it.",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

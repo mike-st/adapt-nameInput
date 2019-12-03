@@ -1,0 +1,20 @@
+{
+    "name": "adapt-nameInput",
+    "repository": "git://github.com/mike-st/adapt-nameInput.git",
+    "framework": ">=2.0.9",
+    "version": "0.1.4",
+    "homepage": "https://github.com/mike-st/adapt-nameInput",
+    "authors": [
+      "Michael Stevens <mesgraphix@gmail.com>"
+    ],
+    "displayName": "Name Input into course",
+    "extension": "nameInput",
+    "description": "Adds a name into the course to store and reuse when needed. To call upon the custom name anywhere within the course add the following div in: <div class='inputs-name-here'>&nbsp;</div>",
+    "main": "/js/adapt-nameInput.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3",
+    "targetAttribute": "_nameInput"
+}

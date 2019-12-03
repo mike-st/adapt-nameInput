@@ -1,0 +1,29 @@
+// config.json
+"_nameInput": {
+    "_isEnabled": true
+}
+
+// course.json
+"_nameInput": {
+    "_isEnabled": true,
+    "_delay": 6,
+    "_buttons": {
+        "yes": {
+            "text": "Continue"
+        },
+        "no": {
+            "text": "Cancel"
+        }
+    },
+    "_prompt": {
+        "title": {
+            "text": "Please enter your name"
+        },
+        "body": {
+            "text": "We will use your name to personalize this course for you. Don't worry though, we won't store your details and they won't be shared with any third party."
+        },
+        "placeholder": {
+            "text": "Your Name"
+        }
+    }
+}

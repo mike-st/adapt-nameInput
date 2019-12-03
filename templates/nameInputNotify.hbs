@@ -1,0 +1,12 @@
+
+{{#if _prompt.body}}
+    <div class="assessment-nameholder-body-text">
+        {{{a11y_text _prompt.body}}}
+    </div>
+{{/if}}
+
+{{#if _userName }}
+    <input type="text" data-id="assessment-nameholder-user-name" id="assessment-nameholder-user-name" aria-labelledby="assessment-nameholder-aria" value="{{ _userName }}" role="textbox">
+{{else}}
+    <input type="text" placeholder="{{{ _prompt.placeholder }}}" data-id="assessment-nameholder-user-name" id="assessment-nameholder-user-name" aria-labelledby="assessment-nameholder-aria" value="" role="textbox">
+{{/if}}
